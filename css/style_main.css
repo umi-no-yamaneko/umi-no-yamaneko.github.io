@@ -56,6 +56,10 @@ body {
     background-color: #63c9ed;
     color: #fff;
     text-align: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 
 
