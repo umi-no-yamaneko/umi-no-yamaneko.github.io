@@ -1,30 +1,205 @@
 /*Multi Web Template Style*/
 /* ©Umi-no-Yamaneko*/
+@charset "utf-8";
+
+@media (max-width: 760px) {
+    .header { 
+        width: 100%;
+        aspect-ratio: 10 / 1;
+    }
+    .header-title {
+        top: 5%;
+        position: absolute;
+        margin-left: 1em;
+        margin-top: 1.5%;
+        font-size: 1.8rem;
+    }
+
+    .footer{
+        display: none;
+    }
+
+    .wrapper-right{
+        margin       : auto;
+        margin-top: 120px;
+        margin-left: 20px;/*changed*/
+    }
+    
+    .content-title-wrapper-ringht{
+        position: relative;
+        margin-top: -36px;
+        margin-left: 25px;
+    }
+    
+    .wrapper-right-content{
+        position: relative;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .wrapper-left{
+        margin       : auto;
+        margin-top: 120px;
+        margin-right: 60px;
+    }
+    .content-title-wrapper-left{
+        position: relative;
+        margin-top: -36px;
+        margin-left: 50px;/*changed*/
+    }
+    
+    .wrapper-left-content{
+        position: relative;
+        margin-left: 50px;/*changed*/
+        margin-bottom: 30px;
+    }
+
+    .liContainer{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 760px) and (max-width: 900px) {
+    .header {
+        width: 100%;
+        height: 60px; 
+    }
+    .footer{
+        display: none;
+    }
+    .header-title{
+        margin-left: 1.5em;
+        margin-top: 10px;
+        font-size: 1.8rem;
+    }
+    .wrapper-right{
+        margin       : auto;
+        margin-top: 120px;
+        margin-left: 20px;/*changed*/
+    }
+    
+    .content-title-wrapper-ringht{
+        position: relative;
+        margin-top: -36px;
+        margin-left: 25px;
+    }
+    
+    .wrapper-right-content{
+        position: relative;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .wrapper-left{
+        margin       : auto;
+        margin-top: 120px;
+        margin-right: 60px;
+    }
+    .content-title-wrapper-left{
+        position: relative;
+        margin-top: -36px;
+        margin-left: 50px;/*changed*/
+    }
+    
+    .wrapper-left-content{
+        position: relative;
+        margin-left: 50px;/*changed*/
+        margin-bottom: 30px;
+    }
+
+    .liContainer{
+        display: none;
+    }
+
+}
+@media (min-width: 900px) {
+    /* 横幅が320px以下の場合に適用するスタイル */
+    .main{
+        left: 300px;
+        margin-left: 300px;
+    }
+
+    .header {
+        width: 300px;
+        height: 100%;
+    }
+    .header-title{
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 1.5em;
+    }
+    .liContainer {
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .liContainer li{
+        text-align:center;
+    }
+
+    .wrapper-right{
+        margin       : auto;
+        margin-top: 120px;
+        margin-left: 60px;
+    }
+    
+    .content-title-wrapper-ringht{
+        position: relative;
+        margin-top: -36px;
+        margin-left: 25px;
+    }
+    
+    .wrapper-right-content{
+        position: relative;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .wrapper-left{
+        margin       : auto;
+        margin-top: 120px;
+        margin-right: 60px;
+    }
+    .content-title-wrapper-left{
+        position: relative;
+        margin-top: -36px;
+        margin-left: 80px;
+    }
+    
+    .wrapper-left-content{
+        position: relative;
+        margin-left: 80px;
+        margin-bottom: 30px;
+    }
+}
+
 body {
     margin: 0px;
     padding: 0;
     display: flex;
-    display: flex;
     flex-flow: column;
-    min-height: 100vh;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-wrap: break-word;
 }
 
 .main {
     max-width: 100%;
     max-height: 100%;
-    position: relative;
-    width: 100%;
     flex: 1;
 }
 
 .header {
-    width: 100%;
-    height: 60px;
     background-color: #63c9ed;
     box-sizing: border-box;
     color: white;
     display: flex;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
 }
 
 .header a{
@@ -33,14 +208,12 @@ body {
 }
 
 .header-title{
-    margin-left: 1.5em;
-    margin-top: 20px;
+    font-size: 1.8rem;
 }
 
 .liContainer{
     margin-right: 0;
     margin-left: auto;
-    display: flex;
 }
 
 .header li{
@@ -68,7 +241,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1300px;
+    /*max-width: 1300px;*/
     margin: 0 auto;
     margin-top: 40px;
 }
@@ -84,9 +257,9 @@ body {
     border-style: solid;
     border-color: #2d0404;
     border-width: 1px;
-    padding-top: 130px;
-    width: 320px;
-    height: 160px;
+    padding-top: 65px;
+    width: 300px;
+    height: 80px;
     text-decoration: none;
     color: rgb(0, 0, 0);
     margin: 5px;
@@ -97,4 +270,80 @@ body {
 
 .wallpaper{
     text-align: center;
+}
+
+#top-gallery-01{
+    background-image: url("../image/index/AA001.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 400px;
+    height: 400px;
+}
+#top-gallery-02{
+    background-image: url("../image/index/AA001.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    width: 400px;
+    height: 400px;
+}
+
+.slide {
+    white-space: nowrap;
+    width: 500px;
+    height: 700px;
+    overflow: hidden;  
+}
+@keyframes slide-4 {
+    0% { margin-left: 0; }
+    33% { margin-left: -100%; }
+    66% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
+.slide > :first-child {
+    animation-name: slide-4;     /* 作成したキーフレームを使う */
+    animation-duration: 5s;    /* アニメーション全体を5秒にする */
+    animation-delay: 0s;       /* 直ちにアニメーション開始する */
+    animation-iteration-count: infinite; /* 永遠にアニメーションする */
+}
+
+
+.wrapper-right{
+    border:#0996c5 solid;
+    border-width: 4px 0px 4px 4px;
+    border-top-left-radius: 30px 30px;
+    border-bottom-left-radius: 30px 30px;
+    box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .5)
+}
+
+.content-title-wrapper-ringht{
+    color: #ff00b5b3;
+    font-size: 3em;
+    position: relative;
+    background: linear-gradient(transparent 0%, #ffffff 0%);
+    width: fit-content;
+}
+
+.wrapper-right-content{
+    position: relative;
+    font-size: 1.5em;
+}
+
+.wrapper-left{
+    border: #0996c5 solid;
+    border-width: 4px 4px 4px 0px;
+    border-top-right-radius: 30px 30px;
+    border-bottom-right-radius: 30px 30px;
+    box-shadow: 0 10px 10px -6px rgba(0, 0, 0, .5)
+}
+.content-title-wrapper-left{
+    color: #ff00b5b3;
+    font-size: 3em;
+    position: relative;
+    background: linear-gradient(transparent 0%, #ffffff 0%);
+    width: fit-content;
+}
+
+.wrapper-left-content{
+    position: relative;
+    font-size: 1.5em;
 }
